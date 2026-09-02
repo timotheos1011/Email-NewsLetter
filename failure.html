@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Failure</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #fff5f5;
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .card {
+        background: white;
+        padding: 2rem 3rem;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        text-align: center;
+      }
+      h1 {
+        color: #dc3545;
+      }
+      form {
+        margin-top: 1rem;
+      }
+      button {
+        background: #0d6efd;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 0.75rem 1.5rem;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Oops!</h1>
+      <p>There was a problem subscribing you. Please try again.</p>
+      <form action="/failure" method="POST">
+        <button type="submit">Try Again</button>
+      </form>
+    </div>
+  </body>
+</html>
